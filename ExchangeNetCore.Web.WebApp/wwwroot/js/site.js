@@ -34,7 +34,8 @@ function loadOrderBook(data) {
         searching: false,
         paging: false,
         info: false,
-        ordering: false,
+        ordering: true,
+        order: [[0, "desc"]],
         data: data.askOrders,
         columns: [
             { data: 'price' },
@@ -47,7 +48,8 @@ function loadOrderBook(data) {
         searching: false,
         paging: false,
         info: false,
-        ordering: false,
+        ordering: true,
+        order: [[0, "asc"]],
         data: data.bidOrders,
         columns: [
             { data: 'price' },
